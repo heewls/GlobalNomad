@@ -1,0 +1,155 @@
+@import "tailwindcss";
+
+@theme {
+  --text-3xl-bold: 32px;
+  --text-3xl-bold--line-height: 42px;
+  --text-3xl-bold--font-weight: 700;
+
+  --text-3xl-semi: 32px;
+  --text-3xl-semi--line-height: 42px;
+  --text-3xl-semi--font-weight: 600;
+
+  --text-2xl-bold: 24px;
+  --text-2xl-bold--line-height: 32px;
+  --text-2xl-bold--font-weight: 700;
+
+  --text-2xl-semi: 24px;
+  --text-2xl-semi--line-height: 32px;
+  --text-2xl-semi--font-weight: 600;
+
+  --text-2xl-md: 24px;
+  --text-2xl-md--line-height: 32px;
+  --text-2xl-md--font-weight: 500;
+
+  --text-2xl-rg: 24px;
+  --text-2xl-rg--line-height: 32px;
+  --text-2xl-rg--font-weight: 400;
+
+  --text-xl-bold: 20px;
+  --text-xl-bold--line-height: 32px;
+  --text-xl-bold--font-weight: 700;
+
+  --text-xl-semi: 20px;
+  --text-xl-semi--line-height: 32px;
+  --text-xl-semi--font-weight: 600;
+
+  --text-xl-md: 20px;
+  --text-xl-md--line-height: 32px;
+  --text-xl-md--font-weight: 500;
+
+  --text-xl-rg: 20px;
+  --text-xl-rg--line-height: 32px;
+  --text-xl-rg--font-weight: 400;
+
+  --text-2lg-bold: 18px;
+  --text-2lg-bold--line-height: 26px;
+  --text-2lg-bold--font-weight: 700;
+
+  --text-2lg-semi: 18px;
+  --text-2lg-semi--line-height: 26px;
+  --text-2lg-semi--font-weight: 600;
+
+  --text-2lg-md: 18px;
+  --text-2lg-md--line-height: 26px;
+  --text-2lg-md--font-weight: 500;
+
+  --text-2lg-rg: 18px;
+  --text-2lg-rg--line-height: 26px;
+  --text-2lg-rg--font-weight: 400;
+
+  --text-lg-bold: 16px;
+  --text-lg-bold--line-height: 26px;
+  --text-lg-bold--font-weight: 700;
+
+  --text-lg-semi: 16px;
+  --text-lg-semi--line-height: 26px;
+  --text-lg-semi--font-weight: 600;
+
+  --text-lg-md: 16px;
+  --text-lg-md--line-height: 26px;
+  --text-lg-md--font-weight: 500;
+
+  --text-lg-rg: 16px;
+  --text-lg-rg--line-height: 26px;
+  --text-lg-rg--font-weight: 400;
+
+  --text-md-bold: 14px;
+  --text-md-bold--line-height: 24px;
+  --text-md-bold--font-weight: 700;
+
+  --text-md-semi: 14px;
+  --text-md-semi--line-height: 24px;
+  --text-md-semi--font-weight: 600;
+
+  --text-md-md: 14px;
+  --text-md-md--line-height: 24px;
+  --text-md-md--font-weight: 500;
+
+  --text-md-rg: 14px;
+  --text-md-rg--line-height: 24px;
+  --text-md-rg--font-weight: 400;
+
+  --text-sm-semi: 13px;
+  --text-sm-semi--line-height: 22px;
+  --text-sm-semi--font-weight: 600;
+
+  --text-sm-md: 13px;
+  --text-sm-md--line-height: 22px;
+  --text-sm-md--font-weight: 500;
+
+  --text-xs-semi: 12px;
+  --text-xs-semi--line-height: 18px;
+  --text-xs-semi--font-weight: 600;
+
+  --text-xs-md: 12px;
+  --text-xs-md--line-height: 18px;
+  --text-xs-md--font-weight: 500;
+
+  --text-xs-rg: 12px;
+  --text-xs-rg--line-height: 18px;
+  --text-xs-rg--font-weight: 400;
+}
+
+@font-face {
+  font-family: "Pretendard";
+  src: url("https://fastly.jsdelivr.net/gh/Project-Noonnu/noonfonts_2107@1.1/Pretendard-Regular.woff2")
+    format("woff2");
+  src: url("https://fastly.jsdelivr.net/gh/Project-Noonnu/noonfonts_2107@1.1/Pretendard-Regular.woff")
+    format("woff");
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Pretendard";
+  src: url("https://fastly.jsdelivr.net/gh/Project-Noonnu/noonfonts_2107@1.1/Pretendard-Medium.woff2")
+    format("woff2");
+  src: url("https://fastly.jsdelivr.net/gh/Project-Noonnu/noonfonts_2107@1.1/Pretendard-Medium.woff")
+    format("woff");
+  font-weight: 500;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Pretendard";
+  src: url("https://fastly.jsdelivr.net/gh/Project-Noonnu/noonfonts_2107@1.1/Pretendard-SemiBold.woff2")
+    format("woff2");
+  src: url("https://fastly.jsdelivr.net/gh/Project-Noonnu/noonfonts_2107@1.1/Pretendard-SemiBold.woff")
+    format("woff");
+  font-weight: 600;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Pretendard";
+  src: url("https://fastly.jsdelivr.net/gh/Project-Noonnu/noonfonts_2107@1.1/Pretendard-Bold.woff2")
+    format("woff2");
+  src: url("https://fastly.jsdelivr.net/gh/Project-Noonnu/noonfonts_2107@1.1/Pretendard-Bold.woff")
+    format("woff");
+  font-weight: 700;
+  font-style: normal;
+  font-display: swap;
+}
