@@ -1,5 +1,16 @@
 @import "tailwindcss";
 
+@layer {
+  body {
+    font-family: "Pretendard", sans-serif;
+    color: var(--color-black);
+    background-color: var(--color-gray100);
+  }
+  button {
+    cursor: pointer;
+  }
+}
+
 @theme {
   --text-3xl-bold: 32px;
   --text-3xl-bold--line-height: 42px;
@@ -108,6 +119,38 @@
   --text-xs-rg: 12px;
   --text-xs-rg--line-height: 18px;
   --text-xs-rg--font-weight: 400;
+}
+
+@theme {
+  --color-gray100: #fafafa;
+  --color-gray200: #eeeeee;
+  --color-gray300: #dddddd;
+  --color-gray400: #cbc9cf;
+  --color-gray500: #adaeb8;
+  --color-gray600: #a4a1aa;
+  --color-gray700: #a1a1a1;
+  --color-gray800: #79747e;
+  --color-gray900: #4b4b4b;
+
+  --color-nomad-black: #112211;
+  --color-black: #1b1b1b;
+
+  --color-green100: #ced8d5;
+  --color-green300: #00ac07;
+  --color-green500: #0b3b2d;
+
+  --color-red100: #ffe4e0;
+  --color-red300: #ffc2ba;
+  --color-red500: #f7472e;
+
+  --color-orange100: #fff4e8;
+  --color-orange500: #ff7c1d;
+
+  --color-yellow: #ffc23d;
+
+  --color-blue100: #e5f3ff;
+  --color-blue300: #2eb4ff;
+  --color-blue500: #0085ff;
 }
 
 @font-face {
