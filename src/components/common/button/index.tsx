@@ -20,13 +20,19 @@ const buttonSize = {
   xl: "h-14 px-5 rounded-md md:px-10",
 };
 
+const buttonVariant = {
+  solid: "bg-nomad-black text-white",
+  outline: "bg-white border-1 border-nomad-black text-nomad-black",
+  disabled: "bg-gray600 text-white",
+};
+
 export default function Button({
   children,
   size = "md",
   fullWidth = false,
   disabled = false,
   className = "",
-  variant,
+  variant = "solid",
   ...props
 }: ButtonType) {
   return (
@@ -34,7 +40,7 @@ export default function Button({
       className={clsx(
         "flex items-center justify-center whitespace-nowrap",
         buttonSize[size],
-        variant,
+        disabled ? buttonVariant.disabled : buttonVariant[variant],
         fullWidth ? "w-full" : "",
         className
       )}
